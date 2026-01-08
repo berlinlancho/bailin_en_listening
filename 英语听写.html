@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴柏林的英语听写应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>吴柏林的英语听写应用</h1>
+        
+        <!-- 输入区域 -->
+        <div class="input-section">
+            <label for="wordList">请输入要听写的单词或短语（用逗号分隔）：</label>
+            <textarea id="wordList" placeholder="例如：apple, banana, cherry, good morning"></textarea>
+            <button id="startBtn">开始听写</button>
+        </div>
+        
+        <!-- 播放区域 -->
+        <div class="playback-section">
+            <div id="status">准备就绪</div>
+            <div class="answer-section">
+                <input type="text" id="answerInput" placeholder="请输入您听到的单词或短语">
+                <button id="submitBtn" disabled>提交答案</button>
+            </div>
+            <div class="controls">
+                <button id="playBtn" disabled>播放</button>
+            </div>
+        </div>
+        
+        <!-- 单词列表区域 -->
+        <div class="word-list-section">
+            <h2>单词列表</h2>
+            <ul id="wordListContainer"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
